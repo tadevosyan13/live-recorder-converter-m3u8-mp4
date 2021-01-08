@@ -1,4 +1,7 @@
 # live-recorder-converter-m3u8-mp4
+Angular 10.
+FFmpeg
+Node.js
 
 1. npm install
 
