@@ -1,0 +1,14 @@
+<input type="text" placeholder="Live Stream URL" #liveStremURL>
+<button (click)="play(liveStremURL.value)">Play</button>
+<button (click)="download(fileDir)">Download</button>
+<video id="example-video" width=600 height=300 class="video-js vjs-default-skin" controls>
+    <source src="" type="application/x-mpegURL">
+</video>
+<script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+<script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+<br><br><br>
+<video id="video_{{idx}}" class="video-js vjs-default-skin" playsinline></video>
+
+<div class="loaderParent" *ngIf="loader">
+<div class="loader"></div>
+</div>

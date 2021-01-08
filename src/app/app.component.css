@@ -1,0 +1,4 @@
+/* change player background color */
+.video-js video {
+    background-color: #42f489;
+}
